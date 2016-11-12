@@ -1,0 +1,8 @@
+@import 'constants';
+@import 'fonts';
+
+body {
+    background-color: $bg-color;
+}
+
+@import 'header/index';

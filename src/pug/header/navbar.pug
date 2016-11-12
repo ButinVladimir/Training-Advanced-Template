@@ -1,0 +1,61 @@
+nav.navbar
+  div.container
+    div.navbar-header
+      button.navbar-toggle.collapsed(
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar-content"
+        aria-expanded="false"
+      )
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
+      a.navbar-brand(
+        href="#"
+      )
+        span.big Redux 
+        span.small.separator
+        span.small Super-Dooper Business
+    
+    div.collapse.navbar-collapse#navbar-content
+      ul.nav.navbar-nav.navbar-right
+        li: a(href="#")
+            span Features
+            span.arrow.glyphicon.glyphicon-chevron-down
+
+        li.dropdown
+            a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+              span Templates
+              span.arrow.glyphicon.glyphicon-chevron-down
+            ul.dropdown-menu
+              li: a(href="#") Meet the Team
+              li.divider(role="separator")
+              li: a(href="#") Pricing Tables
+              li.divider(role="separator")
+              li: a(href="#") Gallery Page
+              li.divider(role="separator")
+              li.intend
+                a(href="#") 
+                  span Portfolio 3 Column
+                  span.arrow.glyphicon.glyphicon-chevron-right
+              li.divider(role="separator")
+              li: a(href="#") Portfolio 4 Column
+              li.divider(role="separator")
+              li
+                a(href="#") 
+                  span Full Width
+                  span.inactive.arrow.glyphicon.glyphicon-chevron-right
+              li.divider(role="separator")
+              li: a(href="#") Archives
+              li.divider(role="separator")
+              li: a(href="#") Contact Form
+
+        li: a(href="#") Shortcodes
+        li: a(href="#") Portfolio
+        li: a(href="#") Blog
+        li.active: a(href="#") Contact
+
+
+  

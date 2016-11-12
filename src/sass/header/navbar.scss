@@ -1,0 +1,78 @@
+.navbar {
+  min-height: 30px;
+  margin-top: 5px;
+
+  @media (min-width: 768px) {
+    margin: 37px 0 0 0;
+  }
+
+  a {
+    color: $text-white;
+  }
+
+  .navbar-header .navbar-brand {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 30px;
+
+    @media (min-width: 768px) {
+      padding: 2px 0 0 0;
+    }
+    
+    .big {
+      font-family: Ronnia;
+      font-size: 34px;
+    }
+    .small {
+      font-family: Georgia;
+      font-style: italic;
+      opacity: 0.35;
+      letter-spacing: 0px;
+    }
+    .separator {
+      margin-left: 8px;
+      margin-right: 8px;
+      &:before {
+        content: "|";
+      }
+    }
+  }
+    
+  .navbar-nav {
+    font-family: Helvetica Neue Bold;
+    font-size: 13px;
+    > li{
+      > a > .arrow {
+        position: relative;
+        margin-left: 6px;
+        color: $arrow-black;
+        top: 3px;
+      }
+        
+      &:hover > a, &.open > a, & > a:focus {
+          background: $bg-color;
+
+          > .arrow {
+            color: $text-white;
+        }
+      }
+    }
+    
+    @media (min-width: 768px) {
+      > li {
+        margin-left:  10px;
+          
+        &:first-child {
+          margin-left: 0;
+        }
+
+        > a {
+          padding: 5px 10px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
