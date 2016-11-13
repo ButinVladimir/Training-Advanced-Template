@@ -1,8 +1,9 @@
 @import 'constants';
 @import 'fonts';
+@import 'mixins';
 
 body {
-    background-color: $bg-color;
+  background-color: $bg-black;
 }
 
 @import 'header/index';

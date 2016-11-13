@@ -1,0 +1,5 @@
+@mixin hide-on-narrow() {
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
