@@ -2,8 +2,37 @@ header {
   position: relative;
   margin-top: 7px;
   border-top: 1px solid $header-border;
-  background-color: $header-bg;
-  min-height: 100vh;
+
+  background: 
+  	radial-gradient(circle at center 160px, rgba(176, 87, 36, 0.65), transparent 75%),
+  	linear-gradient(to right, #8b421c, transparent 100px),
+  	linear-gradient(to left, #8b421c, transparent 100px),
+  	url(images/header-bg.png) repeat, $header-bg;
+
+  > .container >.title {
+    margin: 61px auto 55px;
+    text-align: center;
+    max-width: 830px;
+
+    h2 {
+      font-family: Georgia;
+      font-size: 26px;
+      font-style: italic;
+      color: $text-white;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+    }
+
+    p.subtitle {
+      font-family: Helvetica Neue;
+      font-size: 18px;
+      color: $header-subtitle;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+      line-height: 32px;
+      vertical-align: top;
+    }
+  }
   
   @import 'navbar';
+  @import 'slider';
 }

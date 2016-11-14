@@ -22,16 +22,19 @@
       @media (min-width: 768px) {
         padding: 2px 0 0 0;
       }
-      
+
       .big {
         font-family: Ronnia;
         font-size: 34px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
       }
       .small {
         font-family: Georgia;
         font-style: italic;
         opacity: 0.35;
         letter-spacing: 0px;
+
+        text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
 
         @include hide-on-narrow();
       }
@@ -45,6 +48,7 @@
         @include hide-on-narrow();
       }
     }
+
     .navbar-toggle {
       border: 2px solid $bg-black;
       padding: 4px;
@@ -53,7 +57,7 @@
         background-color: $bg-black;
       }
       
-      &.toggle, &:hover, &:not(.collapsed) {
+      &.toggle, &:not(.collapsed) {
         border-color: $text-white;
         background-color: $bg-black;
         .icon-bar {
@@ -72,6 +76,8 @@
     margin-bottom: 0;
     font-family: Helvetica Neue Bold;
     font-size: 13px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+
     > li{
       > a > .arrow {
         position: relative;
@@ -79,6 +85,10 @@
         color: $arrow-black;
         top: 5px;
         float: right;
+
+        &:before {
+          text-shadow: 0 1px rgba(255, 255, 255, 0.12);
+        }
       }
         
       &:hover > a, &.open > a, & > a:focus {
@@ -94,12 +104,14 @@
         font-size: 12px;
         min-width: 180px;
         background: $bg-black;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
         
         li > a {
           line-height: 28px;
           display: flex;
           justify-content: space-between;
           font-weight: 500;
+          text-shadow: 0 1px 1px #000;
           
           &:hover, &:focus {
             background: transparent;
@@ -117,6 +129,7 @@
           > .arrow {
             color: $arrow-black;
             top: 7px;
+            text-shadow: 0 1px rgba(255, 255, 255, 0.07);
           }
         }
         

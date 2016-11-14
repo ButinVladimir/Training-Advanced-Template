@@ -6,4 +6,17 @@ body {
   background-color: $bg-black;
 }
 
+.container, .container-fluid {
+  @media (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.container {
+  @media (min-width: 992px) {
+    width: 940px;
+  }
+}
+
 @import 'header/index';

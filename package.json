@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/ButinVladimir/Training-Advanced-Template#readme",
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-spritesmith": "^6.3.1",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
+    "gulp-if": "^2.0.2",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.1.0",
     "gulp-rename": "^1.2.2",
