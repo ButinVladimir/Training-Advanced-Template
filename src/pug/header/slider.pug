@@ -1,8 +1,16 @@
 div.container-fluid.slider
-  div.container
-    div.slide.left
-      img(src="/images/screen-1.png")
-    div.slide.middle
-      img(src="/images/screen-2.png")
-    div.slide.right
-      img(src="/images/screen-3.png")
+  div.container-fluid.slider-container
+    div.container.slides
+      div.slide
+        img(src="/images/screen-1.png")
+      div.slide
+        img(src="/images/screen-2.png")
+      div.slide
+        img(src="/images/screen-3.png")
+
+    div.arrow.left
+      span.glyphicon.glyphicon-chevron-left
+    div.arrow.right
+      span.glyphicon.glyphicon-chevron-right
+
+  div.light

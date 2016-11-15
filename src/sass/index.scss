@@ -1,6 +1,9 @@
-@import 'constants';
-@import 'fonts';
-@import 'mixins';
+@import 'components/constants';
+@import 'components/fonts';
+@import 'components/mixins';
+@import 'components/button-plus';
+@import 'components/block-dashed';
+@import 'components/button-golden';
 
 body {
   background-color: $bg-black;
@@ -14,9 +17,18 @@ body {
 }
 
 .container {
-  @media (min-width: 992px) {
-    width: 940px;
+  @media (min-width: 768px) {
+    max-width: 640px;
   }
+
+  @media (min-width: 992px) {
+    max-width: 830px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 940px;
+  }  
 }
 
 @import 'header/index';
+@import 'content/index';

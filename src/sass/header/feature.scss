@@ -1,0 +1,42 @@
+.feature {
+  .news {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @media(min-width: 768px) {
+      &:nth-child(2) {
+        margin-top: 0;
+      }      
+    }
+
+    .image {
+      float: left;
+      width: 55px;
+      height: 55px;
+      background: $feature-image-bg;
+      margin-right: 15px;
+      position: relative;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+
+      .button-plus {
+        top:-6px;
+        left: -6px;
+      }
+    }
+  }
+
+  .block-buttons {
+    @media(max-width: 1199px) {
+      margin-top: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      margin-top: 24px;
+      justify-content: space-between;
+    }
+  }
+}

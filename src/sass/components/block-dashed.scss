@@ -1,0 +1,51 @@
+.block-dashed {
+  background: url(/images/feature-bg.png) center repeat $bg-black;
+  padding: 0;
+  position: relative;
+
+  &:before, &:after {
+    height: 15px;
+    width: 100%;
+
+    /*
+      Dashed line
+     */
+    background: linear-gradient(to right,
+        black 0px,
+        $dashed 1px,
+        $dashed 7px,
+        black 8px
+      ), rgba(0, 0, 0, 0.1);
+
+    background-position: -4px 8px, center;
+    background-size: 9px 1px, 100% 100%;
+    background-repeat: repeat-x, repeat;
+  }
+  &:before {
+    margin-bottom: 25px;
+  }
+  &:after {
+    margin-top: 30px;
+  }
+
+
+  .title {
+    color: $text-white;
+    font-family: Helvetica Neue Bold;
+    font-size: 13px;
+    line-height: 13px;
+    margin: 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+  }
+
+  .text {
+    color: $text-grey;
+    font-family: Helvetica Neue Regular;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 6px 0 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+  }
+}

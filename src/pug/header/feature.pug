@@ -1,0 +1,17 @@
+extends ./../components/block-dashed.pug
+
+block content
+  div.row.feature
+    div.col-xs-12.col-lg-8
+      div.row
+        include news.pug
+        include news.pug
+        include news.pug
+        include news.pug
+    div.col-xs-12.col-lg-4.block-buttons
+      h4.title Pixel Perfect Design
+      p.text Gorgeous design with time and attention dedicated to every pixel. Gorgeous design with time and attention dedicated to every pixel. Time and attention
+      div.buttons
+        - var buttons = ['Feature Tour', 'Purchase Now!']
+        each buttonTitle in buttons
+          include ./../components/button-golden.pug

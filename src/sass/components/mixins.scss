@@ -1,0 +1,31 @@
+@mixin hide-on-narrow() {
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+@mixin arrow-shade() {
+  &:before {
+    text-shadow: 0 1px rgba(255, 255, 255, 0.12);
+  }
+}
+
+@mixin image-border($color) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border: 8px solid $color;
+}
+
+@mixin last-margin($margin) {
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  @media (max-width: 767px) {
+    &:last-child {
+      margin-bottom: $margin;
+    }    
+  }
+}

@@ -1,0 +1,22 @@
+.button-golden {
+  height: 40px;
+  border-radius: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 14px;
+
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.9);
+  background: linear-gradient(to bottom, $btn-golden-start, $btn-golden-finish);
+  border: 0;
+
+  &:hover {
+    background: linear-gradient(to top, $btn-golden-start, $btn-golden-finish);
+  }  
+
+  > span {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
+  }
+}

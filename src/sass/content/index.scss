@@ -1,0 +1,45 @@
+section.content {
+  padding: 0;
+  background: $content-bg;
+  font-size: 12px;
+  font-family: Helvetica Neue Regular;
+  font-weight: normal;
+  color: $text;
+  line-height: 21px;
+
+  &:before, &:after {
+    display: block;
+    width: 100%;
+    height: 10px;
+  }
+
+  &:before {
+    margin-bottom: 50px;
+    background: linear-gradient(to top, $content-border-bg, $content-border-bg 8px, $bg-black);
+  }
+
+  &:after {
+    margin-top: 67px;
+    background: $content-border-bg;
+  }
+
+  h4 {
+    font-size: 14px;
+    font-family: Helvetica Neue Bold;
+    color: $header;
+    margin-bottom: 26px;
+  }
+
+  p {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    } 
+
+    @include last-margin(25px);
+  }
+
+
+  @import 'text';
+  @import 'jumbotron';
+  @import 'news';
+}

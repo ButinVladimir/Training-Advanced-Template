@@ -81,14 +81,11 @@
     > li{
       > a > .arrow {
         position: relative;
-        margin-left: 6px;
+        margin-left: 5px;
         color: $arrow-black;
-        top: 5px;
-        float: right;
+        top: 3px;
 
-        &:before {
-          text-shadow: 0 1px rgba(255, 255, 255, 0.12);
-        }
+        @include arrow-shade();
       }
         
       &:hover > a, &.open > a, & > a:focus {
@@ -100,7 +97,7 @@
       }
       
       &.dropdown .dropdown-menu {
-        font-family: Helvetica Neue;
+        font-family: Helvetica Neue Regular;
         font-size: 12px;
         min-width: 180px;
         background: $bg-black;
@@ -129,7 +126,7 @@
           > .arrow {
             color: $arrow-black;
             top: 7px;
-            text-shadow: 0 1px rgba(255, 255, 255, 0.07);
+            @include arrow-shade();
           }
         }
         
