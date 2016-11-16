@@ -10,14 +10,6 @@
   }
 }
 
-@mixin image-border($color) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border: 8px solid $color;
-}
-
 @mixin last-margin($margin) {
   &:last-child {
     margin-bottom: 0px;

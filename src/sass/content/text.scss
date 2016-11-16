@@ -1,47 +1,15 @@
 section.text {
   .image {
-    text-align: center;
-    margin-bottom: 15px;
-
-    .image-content {
-      display: inline-block;
-      position: relative;
-      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
-
-      &:nth-child(2) {
-        margin-top: 30px;
-      }
-
-      .border {
-        @include image-border(rgba(0, 0, 0, 0.03));
-      }
-
-      img {
-        max-width: 100%;
-      }
-
-      .button-plus {
-        right: -6px;
-        top: -6px;
-      }
-    }
-  }
-
-  .well {
-    font-family: Georgia;
-    font-size: 11px;
-    font-style: italic;
-    text-align: center;
-    color: $well-text;
-    padding: 5px 0;
-    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(255, 255, 255, 0.57);
-    background: $well-bg;
-    border-radius: 4px;
-
     &:not(:last-child) {
       margin-bottom: 30px;
     }
 
-    @include last-margin(30px);
-  }  
+    .border {
+      border-color: rgba(0, 0, 0, 0.03);
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
