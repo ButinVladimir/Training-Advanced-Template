@@ -1,0 +1,41 @@
+.slide {
+  position: absolute;
+
+  img {
+    max-width: 100%;
+    position: relative;
+  }
+
+  &:first-child,
+  &:last-child {
+    display: block;
+    transform: translateY(27px);
+    z-index: 10;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &:first-child {
+    left: 0;
+  }
+
+  &:last-child {
+    right: 0;
+  }
+
+  &:nth-child(2) {
+    left: 50%;
+    width: 100%;
+
+    img {
+      box-shadow:
+      0 25px 60px 0 $slide-shadow-wide,
+      0 25px 40px 0 $slide-shadow-medium,
+      0 25px 20px 0 $slide-shadow-narrow;
+      transform: translateX(-50%);
+      z-index: 12;
+    }
+  }
+}

@@ -1,20 +1,20 @@
 .button-plus {
+  background: linear-gradient(to bottom, $btn-plus-start, $btn-plus-finish);
+  border-radius: 12px;
+  box-shadow:
+  0 1px 1px 0 $btn-plus-shadow-narrow,
+  0 0 1px 4px $btn-plus-shadow-wide;
+  cursor: pointer;
+  height: 25px;
   position: absolute;
   width: 25px;
-  height: 25px;
-  background: linear-gradient(to bottom, $btn-plus-start, $btn-plus-finish);
-  border-radius:12px;
-  cursor: pointer;
-  box-shadow: 
-    0 1px 1px 0 rgba(0, 0, 0, 0.45),
-    0 0 1px 4px rgba(0, 0, 0, 0.15);
 
   > .plus {
-    background: url(/images/plus.png);
-    position: relative;
-    width: 12px;
+    background: url('/images/plus.png');
     height: 13px;
-    top: 7px;
     left: 7px;
+    position: relative;
+    top: 7px;
+    width: 12px;
   }
 }

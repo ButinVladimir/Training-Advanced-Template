@@ -1,0 +1,28 @@
+li > a {
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+  line-height: 28px;
+  text-shadow: 0 1px 1px $navbar-dropdown-link-shadow;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: $text-white;
+
+    > .text {
+      transform: translateX(17px);
+    }
+
+    > .arrow {
+      color: $text-white;
+    }
+  }
+
+  > .arrow {
+    @include arrow-shade;
+
+    color: $arrow-black;
+    top: 7px;
+  }
+}

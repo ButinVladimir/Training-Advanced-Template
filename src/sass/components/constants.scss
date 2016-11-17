@@ -2,26 +2,61 @@ $bg-black: #1c1c1c;
 
 $header-border: #bb6133;
 $header-bg: #813d1a;
+$header-bg-light: rgba(176, 87, 36, .65);
+$header-bg-fadeout: #8b421c;
+$header-text-title: rgba(0, 0, 0, .5);
+
+$brand-text-shadow-big: rgba(0, 0, 0, .3);
+$brand-text-shadow-small: rgba(0, 0, 0, .5);
+
+$navbar-nav-shadow: rgba(0, 0, 0, .5);
+$navbar-dropdown-shadow: rgba(0, 0, 0, .5);
+$navbar-dropdown-link-shadow: #000;
 
 $text-white: #f1eee5;
 $text-grey: #979797;
-$text: #444444;
-$header: #333333;
+$text: #444;
+
+$header: #333;
+$header-subtitle: #f5b99a;
 
 $arrow-black: #12161b;
+$arrow-shade: rgba(255, 255, 255, .12);
+
 $separator-black: #0f0f0f;
 $separator-grey: #262626;
-$header-subtitle :#f5b99a;
+
+$slider-light: rgba(255, 255, 255, .1);
+$slide-shadow-wide: rgba(0, 0, 0, .1);
+$slide-shadow-medium: rgba(0, 0, 0, .2);
+$slide-shadow-narrow: rgba(0, 0, 0, .3);
 
 $dashed: #454545;
 $feature-image-bg: #d0d0d0;
+$feature-image-shadow: rgba(0, 0, 0, .8);
+
 $btn-plus-start: #fcfcfc;
 $btn-plus-finish: #d3d3d3;
 $btn-plus-color: #646464;
+$btn-plus-shadow-narrow: rgba(0, 0, 0, .45);
+$btn-plus-shadow-wide: rgba(0, 0, 0, .15);
+
 $btn-golden-start: #f3e3ad;
 $btn-golden-finish: #dfbd46;
+$btn-golden-shadow: rgba(0, 0, 0, .9);
+$btn-golden-shadow-text: rgba(255, 255, 255, .8);
 
 $content-bg: #f4f2ed;
 $content-border-bg: #e2dfd6;
-$well-text: #888888;
+$content-text-image-border: rgba(0, 0, 0, .03);
+
+$well-text: #888;
 $well-bg: #ece9e2;
+
+$dashed-block-shadow-line: rgba(0, 0, 0, .1);
+$dashed-block-shadow-text: rgba(0, 0, 0, .5);
+
+$bordered-block-shadow: rgba(0, 0, 0, .25);
+
+$well-shadow-inner: rgba(0, 0, 0, .06);
+$well-shadow-outer: rgba(255, 255, 255, .57);

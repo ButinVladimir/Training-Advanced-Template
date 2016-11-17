@@ -10,7 +10,8 @@ body {
   background-color: $bg-black;
 }
 
-.container, .container-fluid {
+.container,
+.container-fluid {
   @media (min-width: 768px) {
     padding-left: 0;
     padding-right: 0;
@@ -28,7 +29,7 @@ body {
 
   @media (min-width: 1200px) {
     max-width: 940px;
-  }  
+  }
 }
 
 @import 'header/index';

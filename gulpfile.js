@@ -1,13 +1,13 @@
-var gulp    = require('gulp'),
-    connect = require('gulp-connect'),
-    pug     = require('gulp-pug'),
-    sass    = require('gulp-sass'),
-    rename  = require('gulp-rename'),
-    plumber = require('gulp-plumber');
-    
-    
+var gulp     = require('gulp'),
+    connect  = require('gulp-connect'),
+    pug      = require('gulp-pug'),
+    sass     = require('gulp-sass'),
+    rename   = require('gulp-rename'),
+    plumber  = require('gulp-plumber'),
+    sassLint = require('gulp-sass-lint');
+
 gulp.task('pug', function() {
-    gulp.src('./src/pug/index.pug')
+    return gulp.src('./src/pug/index.pug')
     .pipe(plumber())
     .pipe(pug())
     .pipe(gulp.dest('./build'))
@@ -15,7 +15,7 @@ gulp.task('pug', function() {
 });
 
 gulp.task('sass', function() {
-    gulp.src('./src/sass/index.scss')
+    return gulp.src('./src/sass/index.scss')
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(rename('style.css'))
@@ -24,7 +24,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('images', function() {
-    gulp.src('./src/images/**/*.png')
+    return gulp.src('./src/images/**/*.png')
     .pipe(gulp.dest('./build/images'))
     .pipe(connect.reload());
 });
@@ -36,12 +36,28 @@ gulp.task('watch', function() {
 });
 
 gulp.task('server', function() {
-    connect.server({
+    return connect.server({
         root: 'build',
         livereload: true,
         port: 8000
     });
 });
 
-gulp.task('build', ['pug', 'sass', 'images']);
-gulp.task('default', ['server', 'build', 'watch']);
+gulp.task('scss-lint', function() {
+    return gulp.src('./src/sass/**/*.scss')
+        .pipe(sassLint({
+            options: {
+                formatter: 'stylish',
+              },
+            rules: {
+                'no-url-domains': false,
+                'no-url-protocols': false,
+            }
+        }))
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError());
+});
+
+gulp.task('lint', ['scss-lint']);
+gulp.task('build', ['lint', 'pug', 'sass', 'images']);
+gulp.task('default', ['build', 'server', 'watch']);

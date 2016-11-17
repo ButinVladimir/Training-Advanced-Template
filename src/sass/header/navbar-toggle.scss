@@ -1,0 +1,19 @@
+.navbar-toggle {
+  border: 2px solid $bg-black;
+  margin: 2px 15px 0 0;
+  padding: 4px;
+
+  .icon-bar {
+    background-color: $bg-black;
+  }
+
+  &.toggle,
+  &:not(.collapsed) {
+    background-color: $bg-black;
+    border-color: $text-white;
+
+    .icon-bar {
+      background-color: $text-white;
+    }
+  }
+}

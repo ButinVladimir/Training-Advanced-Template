@@ -1,23 +1,23 @@
-@mixin hide-on-narrow() {
+@mixin hide-on-narrow {
   @media (max-width: 991px) {
     display: none;
   }
 }
 
-@mixin arrow-shade() {
-  &:before {
-    text-shadow: 0 1px rgba(255, 255, 255, 0.12);
+@mixin arrow-shade {
+  &::before {
+    text-shadow: 0 1px $arrow-shade;
   }
 }
 
 @mixin last-margin($margin) {
   &:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   @media (max-width: 767px) {
     &:last-child {
       margin-bottom: $margin;
-    }    
+    }
   }
 }

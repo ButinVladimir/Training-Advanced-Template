@@ -1,38 +1,37 @@
 header {
-  position: relative;
-  margin-top: 7px;
+  background:
+  radial-gradient(circle at center 160px, $header-bg-light, transparent 75%),
+  linear-gradient(to right, $header-bg-fadeout, transparent 100px),
+  linear-gradient(to left, $header-bg-fadeout, transparent 100px),
+  url('images/header-bg.png') repeat, $header-bg;
   border-top: 1px solid $header-border;
+  margin-top: 7px;
+  position: relative;
 
-  background: 
-  	radial-gradient(circle at center 160px, rgba(176, 87, 36, 0.65), transparent 75%),
-  	linear-gradient(to right, #8b421c, transparent 100px),
-  	linear-gradient(to left, #8b421c, transparent 100px),
-  	url(images/header-bg.png) repeat, $header-bg;
-
-  > .container >.title {
+  > .container > .title {
     margin: 61px auto 55px;
-    text-align: center;
     max-width: 840px;
+    text-align: center;
 
     h2 {
+      color: $text-white;
       font-family: Georgia;
       font-size: 26px;
       font-style: italic;
-      color: $text-white;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
       margin-bottom: 20px;
+      text-shadow: 0 1px 3px $header-text-title;
     }
 
-    p.subtitle {
+    .subtitle {
+      color: $header-subtitle;
       font-family: Helvetica Neue Regular;
       font-size: 18px;
-      color: $header-subtitle;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
       line-height: 32px;
+      text-shadow: 0 1px 1px $header-text-title;
       vertical-align: top;
     }
   }
-  
+
   @import 'navbar';
   @import 'slider';
   @import 'feature';

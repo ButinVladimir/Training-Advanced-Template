@@ -1,0 +1,20 @@
+> .bordered-content {
+  box-shadow: 0 0 6px 0 $bordered-block-shadow;
+  margin-bottom: 15px;
+  position: relative;
+
+  > .border {
+    border: 8px solid transparent;
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  > .button-plus {
+    right: -7px;
+    top: -7px;
+  }
+}

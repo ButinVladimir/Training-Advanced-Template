@@ -1,11 +1,11 @@
-section.text {
+.section-text {
   .image {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
 
     .border {
-      border-color: rgba(0, 0, 0, 0.03);
+      border-color: $content-text-image-border;
     }
 
     img {

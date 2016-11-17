@@ -1,9 +1,9 @@
-div(
-  class="bordered " + "image"
-)
-  div.bordered-container
-    div.bordered-content
+block vars
+
+div(class='bordered ' + addClass)
+  .bordered-container
+    .bordered-content
       block content
-      div.border
+      .border
       include ./../components/button-plus.pug
-    div.well.well-sm= text
+    .well.well-sm= text
