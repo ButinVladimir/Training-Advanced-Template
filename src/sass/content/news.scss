@@ -1,0 +1,89 @@
+.section-news {
+  @include column-margins;
+
+  margin-top: 55px;
+
+  .feed {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .feed-item {
+    @include last-margin(0);
+
+    margin-bottom: 18px;
+
+    p {
+      line-height: 20px;
+      margin: 0;
+    }
+
+    .image {
+      @include avatar($content-feed-image-bg);
+    }
+  }
+
+  .separator {
+    border-bottom: 1px solid $content-feed-separator-bright;
+    border-top: 1px solid $content-feed-separator-dark;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .meta {
+    color: $content-feed-meta;
+    font-family: Georgia;
+    font-size: 11px;
+    font-style: italic;
+  }
+
+  .rambling {
+    .text {
+      min-height: 55px;
+    }
+  }
+
+  .tweet {
+    a {
+      border-bottom: 1px solid $content-feed-link-border;
+      color: $content-feed-link;
+      display: inline-block;
+      float: left;
+      line-height: 18px;
+      margin-right: 4px;
+      text-decoration: none;
+
+      &:active,
+      &:focus,
+      &:hover {
+        border-bottom-color: $content-feed-link-border-hover;
+        color: $content-feed-link-hover;
+      }
+    }
+  }
+
+  .comment {
+    @include last-margin(0);
+
+    margin-bottom: 39px;
+
+    .head {
+      margin-bottom: 23px;
+    }
+
+    .text {
+      font-family: Georgia;
+      font-style: italic;
+    }
+
+    h5 {
+      font-family: Helvetica Neue Bold;
+      font-size: 12px;
+      line-height: 14px;
+      margin: 0 0 4px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+section.section-news.row
+  .feed.col-xs-12.col-sm-6.col-md-4
+    h4 Ramblings from the Redux Blog.
+    ul
+      - var i = 4;
+      while i > 0
+        include rambling.pug
+        - i--;
+
+  .feed.col-xs-12.col-sm-6.col-md-4
+    h4 Musings in 140 characters or less.
+    ul
+      - var i = 4;
+      while i > 0
+        include tweet.pug
+        - i--;
+
+  .feed.col-xs-12.col-sm-12.col-md-4
+    h4 What customers are sayin'.
+    ul
+      - var name = "Marcin Gora"
+      - var position = "Managing Director Apple UK"
+      - var site = "Apple.co.uk"
+      include comment.pug
+
+      - var name = "Steven Bluck"
+      - var position = "Technical Director Audi International"
+      - var site = "Audi.com"
+      include comment.pug

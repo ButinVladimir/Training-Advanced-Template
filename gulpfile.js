@@ -59,5 +59,5 @@ gulp.task('scss-lint', function() {
 });
 
 gulp.task('lint', ['scss-lint']);
-gulp.task('build', ['lint', 'pug', 'sass', 'images']);
+gulp.task('build', ['pug', 'sass', 'images']);
 gulp.task('default', ['build', 'server', 'watch']);

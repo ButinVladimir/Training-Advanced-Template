@@ -3,9 +3,11 @@ nav.navbar
     .navbar-header
       button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-content', aria-expanded='false')
         span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
+
+        - var i = 3
+        while i > 0
+          span.icon-bar
+          - i--;
 
       a.navbar-brand(href='#')
         span.big Redux 
@@ -22,6 +24,7 @@ nav.navbar
           a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
             span Templates
             span.arrow.glyphicon.glyphicon-chevron-down
+
             ul.dropdown-menu
               li: a(href='#')
                 span.text Meet the Team

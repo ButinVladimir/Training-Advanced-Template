@@ -33,7 +33,7 @@ $slide-shadow-narrow: rgba(0, 0, 0, .3);
 
 $dashed: #454545;
 $feature-image-bg: #d0d0d0;
-$feature-image-shadow: rgba(0, 0, 0, .8);
+$avatar-shadow: rgba(0, 0, 0, .2);
 
 $btn-plus-start: #fcfcfc;
 $btn-plus-finish: #d3d3d3;
@@ -43,12 +43,17 @@ $btn-plus-shadow-wide: rgba(0, 0, 0, .15);
 
 $btn-golden-start: #f3e3ad;
 $btn-golden-finish: #dfbd46;
-$btn-golden-shadow: rgba(0, 0, 0, .9);
+$btn-golden-shadow: rgba(0, 0, 0, .09);
+$btn-golden-shadow-wide: rgba(0, 0, 0, .13);
 $btn-golden-shadow-text: rgba(255, 255, 255, .8);
+$btn-golden-text: #252525;
 
 $content-bg: #f4f2ed;
 $content-border-bg: #e2dfd6;
 $content-text-image-border: rgba(0, 0, 0, .03);
+$content-text-widget-border: rgba(255, 255, 255, .04);
+$content-text-widget-subtitle: #6b96a8;
+$content-text-widget-shadow: rgba(0, 0, 0, .19);
 
 $well-text: #888;
 $well-bg: #ece9e2;
@@ -60,3 +65,17 @@ $bordered-block-shadow: rgba(0, 0, 0, .25);
 
 $well-shadow-inner: rgba(0, 0, 0, .06);
 $well-shadow-outer: rgba(255, 255, 255, .57);
+
+$content-jumbotron-bg-start: #fff;
+$content-jumbotron-bg-finish: #f4f4f4;
+$content-jumbotron-border: #dbd8d1;
+$content-jumbotron-shadow: rgba(0, 0, 0, .05);
+
+$content-feed-image-bg: #000;
+$content-feed-separator-dark: #e4e1d9;
+$content-feed-separator-bright: #fefdfd;
+$content-feed-meta: #888;
+$content-feed-link: #5597b2;
+$content-feed-link-hover: #3e6f83;
+$content-feed-link-border: #dbd7cc;
+$content-feed-link-border-hover: #cbc7bd;

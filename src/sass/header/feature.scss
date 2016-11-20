@@ -13,13 +13,7 @@
     }
 
     .image {
-      background: $feature-image-bg;
-      box-shadow: 0 0 5px 0 $feature-image-shadow;
-      float: left;
-      height: 55px;
-      margin-right: 15px;
-      position: relative;
-      width: 55px;
+      @include avatar($feature-image-bg)
 
       .button-plus {
         left: -7px;

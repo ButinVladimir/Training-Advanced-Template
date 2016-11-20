@@ -29,16 +29,8 @@
     font-family: Helvetica Neue Bold;
     font-size: 14px;
     margin-bottom: 26px;
+    margin-top: 0;
   }
-
-  p {
-    &:not(:last-child) {
-      margin-bottom: 25px;
-    }
-
-    @include last-margin(25px);
-  }
-
 
   @import 'text';
   @import 'jumbotron';

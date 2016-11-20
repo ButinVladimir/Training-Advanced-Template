@@ -1,8 +1,9 @@
 .bordered {
-  text-align: center;
+  text-align: left;
 
   > .bordered-container {
     display: inline-block;
+    width: 100%;
 
     @import 'bordered-block-content';
 

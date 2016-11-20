@@ -4,10 +4,10 @@ block content
   .row.feature
     .col-xs-12.col-lg-8
       .row
-        include news.pug
-        include news.pug
-        include news.pug
-        include news.pug
+        - var i = 4
+        while i > 0
+          include news.pug
+          - i--;
     .col-xs-12.col-lg-4.block-buttons
       h4.title Pixel Perfect Design
       p.text Gorgeous design with time and attention dedicated to every pixel. Gorgeous design with time and attention dedicated to every pixel. Time and attention
