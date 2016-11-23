@@ -25,6 +25,12 @@
     img {
       width: 100%;
     }
+
+    &.widget {
+      .well {
+        margin-top: 19px;
+      }
+    }
   }
 
   .widget {
@@ -45,10 +51,10 @@
       }
 
       .subtitle {
+        @include italic-font;
+
         color: $content-text-widget-subtitle;
-        font-family: Georgia;
         font-size: 11px;
-        font-style: italic;
         line-height: 25px;
         margin: 0;
       }

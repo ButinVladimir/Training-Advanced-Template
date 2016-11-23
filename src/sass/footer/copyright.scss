@@ -1,0 +1,27 @@
+.copyright {
+  color: $copyright;
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+  a {
+    &:hover,
+    &:active,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+
+  .light {
+    color: $copyright-grey;
+  }
+
+  .white {
+    color: $copyright-white;
+  }
+
+  .author {
+    @media (min-width: 768px) {
+      text-align: right;
+    }
+  }
+}

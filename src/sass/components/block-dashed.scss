@@ -1,5 +1,6 @@
 .block-dashed {
   background: url('/images/feature-bg.png') center repeat $bg-black;
+  box-shadow: 0 1px 1px 0 $dashed-block-shadow;
   padding: 0;
   position: relative;
 
@@ -30,7 +31,6 @@
   .title {
     box-sizing: border-box;
     color: $text-white;
-    font-family: Helvetica Neue Bold;
     font-size: 13px;
     line-height: 13px;
     margin: 0;
@@ -40,10 +40,7 @@
   .text {
     box-sizing: border-box;
     color: $text-grey;
-    font-family: Helvetica Neue Regular;
-    font-size: 12px;
-    line-height: 20px;
-    margin: 6px 0 0;
+    margin: 8px 0 0;
     text-shadow: 0 1px 1px $dashed-block-shadow-text;
   }
 }

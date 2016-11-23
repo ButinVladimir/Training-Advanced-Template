@@ -1,0 +1,18 @@
+extends ./../components/block-dashed.pug
+
+block content
+  .row.contacts
+    .col-xs-12.col-sm-6.col-md-8.contacts
+      h4.title If you're using Redux then we want to hear from you!
+      p.text Sed ornare dictum mi, sed rutrum metus condimentum sodales. Fusce quis tellus mollis sapien porta placerat. In dapibus velit eget felis rutrum posuere. Pellentesque tincidunt augue vitae diam auctor id fermentum ante elementum. estibulum in luctus urna. Vivamus euismod, ligula eu commodo accumsan.
+      p.text.email-text
+        | Email: 
+        a.white(href='#') hello@redux.com
+        | Tel: 1-408-996-1010
+    form.col-xs-12.col-sm-6.col-md-4.subscribe
+      h4.title Subscribe and get the inside scoop.
+      p.text Subscribe to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!
+      .email-input
+        input(type='email', placeholder='enter your email address', required)
+        button(type='submit')
+          | subscribe

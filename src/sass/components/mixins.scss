@@ -51,3 +51,8 @@
     }
   }
 }
+
+@mixin italic-font {
+  font-family: Georgia;
+  font-style: italic;
+}

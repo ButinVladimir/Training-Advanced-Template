@@ -17,9 +17,8 @@
 
   .small {
     @include hide-on-narrow;
+    @include italic-font;
 
-    font-family: Georgia;
-    font-style: italic;
     letter-spacing: 0;
     opacity: .35;
     text-shadow: 0 -1px $brand-text-shadow-small;

@@ -8,6 +8,18 @@
 
 body {
   background-color: $bg-black;
+  font-family: Helvetica Neue Regular;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica Neue Bold;
 }
 
 .container,
@@ -34,3 +46,4 @@ body {
 
 @import 'header/index';
 @import 'content/index';
+@import 'footer/index';
