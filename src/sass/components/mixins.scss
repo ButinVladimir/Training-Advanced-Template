@@ -1,5 +1,5 @@
 @mixin hide-on-narrow {
-  @media (max-width: 991px) {
+  @media (max-width: $screen-sm-max) {
     display: none;
   }
 }
@@ -15,7 +15,7 @@
     margin-bottom: 0;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $screen-xs-max) {
     &:last-child {
       margin-bottom: $margin;
     }
@@ -34,7 +34,7 @@
 
 @mixin column-margins {
   > .col-xs-12 {
-    @media (max-width: 767px) {
+    @media (max-width: $screen-xs-max) {
       margin-top: 20px;
 
       &:first-child {
@@ -42,7 +42,7 @@
       }
     }
 
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
       margin-top: 0;
 
       &:last-child {
@@ -53,6 +53,6 @@
 }
 
 @mixin italic-font {
-  font-family: Georgia;
+  font-family: $font-italic;
   font-style: italic;
 }

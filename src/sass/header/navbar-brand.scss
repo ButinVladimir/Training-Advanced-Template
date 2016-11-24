@@ -5,12 +5,12 @@
   height: 30px;
   margin-left: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen-sm-min) {
     padding: 2px 0 0;
   }
 
   .big {
-    font-family: Ronnia;
+    font-family: $font-ronnia;
     font-size: 34px;
     text-shadow: 0 1px 1px $brand-text-shadow-big;
   }

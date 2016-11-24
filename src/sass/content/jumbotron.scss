@@ -27,7 +27,7 @@
     text-align: right;
   }
 
-  @media (max-width: 1199px) {
+  @media (max-width: $screen-md-max) {
     .text-container {
       h3,
       p {

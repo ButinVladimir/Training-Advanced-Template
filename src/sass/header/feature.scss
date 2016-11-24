@@ -6,7 +6,7 @@
       margin-top: 0;
     }
 
-    @media(min-width: 768px) {
+    @media(min-width: $screen-sm-min) {
       &:nth-child(2) {
         margin-top: 0;
       }
@@ -23,7 +23,7 @@
   }
 
   .block-buttons {
-    @media(max-width: 1199px) {
+    @media(max-width: $screen-md-max) {
       margin-top: 30px;
     }
 

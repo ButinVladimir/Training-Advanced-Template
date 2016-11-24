@@ -3,7 +3,7 @@
   margin-top: 5px;
   min-height: 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen-sm-min) {
     margin: 37px 0 0;
   }
 
@@ -16,7 +16,7 @@
 
     @import 'navbar-toggle';
 
-    @media (max-height: 767px) {
+    @media (max-height: $screen-xs-max) {
       margin-bottom: 5px;
     }
   }

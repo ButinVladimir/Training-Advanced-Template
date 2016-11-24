@@ -1,5 +1,5 @@
 .navbar-nav {
-  font-family: Helvetica Neue Bold;
+  font-family: $font-neue-bold;
   font-size: 13px;
   margin-bottom: 0;
   margin-top: 0;
@@ -14,7 +14,7 @@
       position: relative;
       top: 3px;
 
-      @media (max-width: 767px) {
+      @media (max-width: $screen-xs-max) {
         float: right;
         left: 5px;
       }
@@ -33,7 +33,7 @@
     @import 'navbar-dropdown';
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $screen-sm-min) {
     > li {
       margin-left: 10px;
 

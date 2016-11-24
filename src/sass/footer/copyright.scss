@@ -20,7 +20,7 @@
   }
 
   .author {
-    @media (min-width: 768px) {
+    @media (min-width: $screen-sm-min) {
       text-align: right;
     }
   }

@@ -34,10 +34,10 @@
   }
 
   .meta {
+    @include italic-font;
+
     color: $content-feed-meta;
-    font-family: Georgia;
     font-size: 11px;
-    font-style: italic;
   }
 
   .rambling {
